@@ -1,27 +1,27 @@
 <!-- https://github.com/npm/npm/issues/13461 -->
 <template>
   <div id="app">
-    <!-- <div class="acoder codeMonkey" id="codeMonkey" v-on:click="letCode">
+    <div class="acoder codeMonkey" id="codeMonkey" v-on:click="letCode">
       <p>{{codeMonkeySay}}</p>
       <input id="codeMonkeyDo" type="text" v-model="codeMonkeyDoSth"/>
     </div>
     <div class="acoder codeGirl" id="codeGirl" v-on:click="letCode">
       <p>{{codeGirlSay}}</p>
       <input id="codeGirlDo" type="text" v-model="codeGirlDoSth"/>
-    </div> -->
+    </div>
     <!-- *********************** -->
-    <child-Component coder-id="codeMonkey" coder-say="Hi 我是程序猿"></child-Component>
-    <child-Component coder-id="codeGirl" coder-say="Hi 我是程序媛"></child-Component>
+    <!-- <child-Component coder-id="codeMonkey" coder-say="Hi 我是程序猿"></child-Component>
+    <child-Component coder-id="codeGirl" coder-say="Hi 我是程序媛"></child-Component> -->
   </div>
 </template>
 
 <script>
-import childComponent from './components/childComponent.vue'
+// import childComponent from './components/childComponent.vue'
 export default {
   name: 'app',
   components: {
-    childComponent
-  }/*,
+    // childComponent
+  },
   //// 复用组件时注释
   data:()=>{
     return {
@@ -59,7 +59,7 @@ export default {
       
     // }
     
-  }*/
+  }
 }
 </script>
 
